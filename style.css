@@ -1,0 +1,77 @@
+/* @font-face {
+    font-family: 'DMSerifDisplay';
+    font-style: Normal;
+    font-weight: 400;
+    src: url(fonts/DMSerifDisplay-Regular.ttf) format('.ttf');
+  } */
+
+body{
+    font-family: 'DM Serif Display', serif;    
+}
+
+.accordion {
+    width: 100vw;
+    height: auto;
+    }
+
+
+img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.accordion img {
+
+    width: 20%;
+    height: auto;
+    margin: auto;
+
+    }
+
+  .content img {
+    width: 30%;
+    height: auto;
+    margin: auto;
+    }
+
+.accordion .content {
+
+    
+    display: none;
+    /* padding: 10px; */
+    border: 1px solid #ddd;
+    }
+
+.accordion .content.active {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: black;
+    color: white;
+    display: block;
+    height: 30vh;
+    }
+
+.accordian .content.active img {
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    }
+
+.accordion .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    height: 30vh;
+    font-size: 100px;
+    }
+
+.accordion .header:last-child {
+    border-bottom: 1px solid #ddd;
+    }

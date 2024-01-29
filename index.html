@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Accordion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div class="accordion">
+        
+        <div class="header">
+            <img src="img/handle.png">
+        </div>
+        <div class="content">
+            <img src="img/1.jpg">
+        </div>
+
+        <div class="header">
+            <img src="img/handle.png">
+        </div>
+        <div class="content">
+            <img src="img/2.jpg">
+        </div>
+       
+        <div class="header">
+            <img src="img/handle.png">
+        </div>
+        <div class="content">
+            <img src="img/3.jpg">
+        </div>
+    </div>
+
+    <script>
+    document.querySelectorAll('.accordion .header').forEach(function(header){
+    header.addEventListener('click', function() {
+    header.nextElementSibling.classList.toggle('active');
+    });
+});   </script>
+</body>
+</html>
